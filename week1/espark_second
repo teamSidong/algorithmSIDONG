@@ -1,0 +1,25 @@
+// 1. num을 형변환하여 한자리씩 쪼갠다
+// 2. 쪼갠 num을 k와 비교한다
+// 3. k와 일치하는 경우 해당 인덱스를 반환한다.
+// 4. 일치하지 않는 경우 -1을 반환한다.
+
+function solution(num, k) {
+    let answer = 0;
+    let string = new String(num); // num을 형변환
+    let answerList = []; // 정답 리스트
+    let notanswer = ''; // 노정답
+    for(i=0; i<string.length; i++){
+        if(string[i]==k){ // string의 글자가 k와 일치하는 경우 
+            answerList.push(i+1); 
+        }else if(string[i]!=k){ // 일치하지 않는 경우      
+            notanswer = -1;
+        } 
+    }
+    if(answerList.length==0){ // string의 글자가 k와 일치하지 않는 경우 answer가 노정답 -1이 되도록 설정
+        answer = notanswer; 
+    }else{
+         answer = answerList[0];   // string의 글자가 k와 일치하는 경우 정답리스트의 첫번째 자리가 answer가 되도록 설정
+    }  
+   
+    return answer; // answer 반환
+}
