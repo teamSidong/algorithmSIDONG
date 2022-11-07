@@ -1,0 +1,16 @@
+// 1. S의 길이를 구한다
+// 2. S의 길이가 짝수인 경우> 문자열을 2로 나눈 수를 자릿수로 하여 해당자릿수와 -1자릿수
+// 3. S의 길이가 홀수인 경우 > 문자열을 2로 나눠 해당 자릿수 
+
+function solution(s) {
+    let answer = '';
+    let index = ''; // 자릿수를 반환
+    if(s.length % 2 ==0){ // 짝수인 경우
+        index = (s.length / 2); // 문자열의 길이를 2로 나눈 수를 index로 지정 
+        answer = s[index-1]+s[index]; // index에 해당하는 글자와 그 전 글자를 answer로 지정
+    }else if(s.length % 2 == 1){ // 홀수인 경우
+        index = parseInt(s.length /2); // 문자열의 길이를 2로 나눈 수의 정수를 index로 지정
+        answer = s[index]; // index에 해당하는 글자를 answer로 지정
+    }    
+    return answer; // answer 반환
+}
