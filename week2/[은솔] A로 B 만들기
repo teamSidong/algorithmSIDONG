@@ -1,0 +1,22 @@
+// 해당 문자열의 개수 확인: split(문자).length-1;
+
+// 1.비포와 애프터를 한글자씩 쪼갬
+
+// 2.한글자씩 비교하여 완전히 동일한 경우 1 아닌 경우 0을 리턴
+
+function solution(before, after) {
+    let answer = 0;
+    let same = 0; // 같은 문자가 있는 수 
+    for(i=0; i<before.length; i++){ // 비포 문자열의 수만큼 반복
+        const beforeNum = before.split(before[i]).length-1; // 비포문자열의 요소 개수 반환
+        const afterNum =after.split(before[i]).length-1; // 애프터문자열의 요소 개수 반환
+        if(beforeNum == afterNum){ // 비포 요소 개수와 애프터 요소 개수가 같은 경우
+            same += 1; // 같은 문자수 증가하여 반환
+        }
+    }
+    console.log(same);
+    if(same == before.length){ // 같은 문자수가 비포문자열의 개수와 같은 경우 1을 반환 (아닌경우 그대로 0이 반환)
+        answer = 1;
+    }
+    return answer;
+}
