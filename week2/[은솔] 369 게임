@@ -1,0 +1,14 @@
+// 1. 수만큼 반복
+// 2. 수가 3을 6을 9를 포함한 경우 박수 1씩 추가
+
+function solution(order) {
+    let answer = 0;
+    let orderS = String(order); // order을 형변환
+    for(i=0; i<orderS.length; i++){ // orderS길이만큼 반복
+      if( orderS[i] == 3 || orderS[i] == 6 || orderS[i] == 9 ){ // orderS의 요소가 3 또는 6 또는 9인 경우 
+        answer += 1; // answer에 1씩 더하여 반환
+        console.log("answer>>>", answer)  
+       }   
+    }     
+    return answer;
+}
