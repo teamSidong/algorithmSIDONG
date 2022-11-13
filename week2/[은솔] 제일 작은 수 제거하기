@@ -1,0 +1,19 @@
+// 최솟값: Math.min();
+
+// 배열에서 작은 수 제거
+// 배열 개수가 0인 경우 -1을 배열에 넣어 반환
+
+function solution(arr) {
+    let answer = [];
+    const test = Math.min(...arr); // arr배열의 최솟값을 test에 저장
+    for(i=0; i<arr.length; i++){ // arr의 길이만큼 반복
+        if(arr[i] == test){ // arr의 각 요소가 test와 동일한 경우
+            arr.splice(i,1); // arr에서 test를 제거
+            if(arr.length == 0){ // arr의 길이가 0인 경우
+            arr.push(-1); // arr에 -1을 추가
+            }
+        }
+    }  
+    answer = arr; // 정답을 현재 배열로 저장
+    return answer;
+}
