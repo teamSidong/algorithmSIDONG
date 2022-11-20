@@ -1,0 +1,16 @@
+// 1. n이 7보다 작은 경우 무조건 한판
+// 2. n이 7보다 큰 경우 나머지가 없으면 나눈수만큼 피자 필요 / 나머지가 있으면 한판 더 필요
+
+function solution(n) {
+    let answer = 0;
+    if(n<7){
+        answer = 1; // n이 7보다 작은 경우 answer를 1로 지정
+    }else{
+        if(n%7 == 0){ // n이 7로 나누어떨어지는 경우
+            answer = n/7; // n을 7로 나눈 수를 answer로 지정
+        }else{
+            answer = parseInt(n/7) + 1; // 나눈 수를 정수변환한 수에 1를 더하여 answer로 지정
+        }
+    }
+    return answer;
+}
