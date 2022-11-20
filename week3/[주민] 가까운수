@@ -1,0 +1,172 @@
+
+let array =	[11,13,15,17,27,29,21];
+let n =20;
+
+function solution(array, n) {
+    array.sort(function(a, b)  {
+        return a - b;
+      });
+    
+    let half = Math.floor(array.length/2);
+    cArr = getCloseArr(array,half,n);
+
+    while(cArr.length > 1){
+        half = Math.floor(cArr.length/2);
+        cArr = getCloseArr(cArr,half,n);
+    }
+    console.log(cArr);
+    
+    return cArr[0];
+}
+
+function getCloseArr(array, half, n){
+    const firstArr = array.slice(half);
+    const secondArr = array.slice(0, half);
+
+    let diff1 = Math.abs(n -firstArr[firstArr.length-1]);
+    let diff2 = Math.abs(n - secondArr[0]);
+
+    if(diff1 < diff2) return firstArr;
+    else if(diff1 > diff2) return secondArr;
+
+    let i = 1;
+    while(diff1 === diff2){
+        diff1 = Math.abs(n -firstArr[firstArr.length-i]);
+        diff2 = Math.abs(n - secondArr[i]);
+        i++;
+    }
+
+    if(diff1 < diff2) return firstArr;
+    else if(diff1 > diff2) return secondArr;
+
+}
+
+
+solution(array, n);
+
+/*
+
+function solution(array, n) {
+    array.sort(function(a, b)  {
+        return a - b;
+      });
+    
+    let half = Math.floor(array.length/2);
+    cArr = getCloseArr(array,half,n);
+
+    while(cArr.length > 1){
+        half = Math.floor(cArr.length/2);
+        cArr = getCloseArr(cArr,half,n);
+    }
+    console.log(cArr);
+    
+    return cArr[0];
+}
+
+function getCloseArr(array, half, n){
+    const firstArr = array.slice(half);
+    const secondArr = array.slice(0, half);
+
+    let diff1 = Math.abs(n -firstArr[firstArr.length-1]);
+    let diff2 = Math.abs(n - secondArr[0]);
+    
+    if(diff1 === diff1){
+        console.log(firstArr);
+        console.log(secondArr);
+        return firstArr;
+    }
+
+    if(diff1 < diff2) return firstArr;
+    else return secondArr;
+}
+
+
+solution(array, n);
+
+*/
+
+/*
+function solution(array, n) {
+    array.sort(function(a, b)  {
+        return a - b;
+      });
+
+    console.log(array);
+
+    let half = Math.floor(array.length/2);
+    cArr = getCloseArr(array,half,n);
+
+    while(cArr.length > 1){
+        half = Math.floor(cArr.length/2);
+        cArr = getCloseArr(cArr,half,n);
+    }
+    console.log(cArr);
+    
+    return cArr[0];
+}
+
+function getCloseArr(array, half, n){
+    const firstArr = array.slice(half);
+    const secondArr = array.slice(0, half);
+
+    let diff1 = Math.abs(n -firstArr[firstArr.length-1]);
+    let diff2 = Math.abs(n - secondArr[0]);
+
+    if(diff1 === diff2){
+        diff1 = Math.abs(n -firstArr[0]);
+        diff2 = Math.abs(n - secondArr[0]);
+
+        if(diff1 < diff2) return firstArr;
+        else if(diff1 > diff2) return secondArr;
+    }
+
+    if(diff1 < diff2) return firstArr;
+    else if(diff1 > diff2) return secondArr;
+
+}
+
+solution(array, n);
+*/
+
+/*
+let diff = 100;
+
+function solution(array, n) {
+    var answer = 0;
+    
+    array = array.sort();
+    answer = makeHalf(array, n);
+    
+    return answer;
+}
+
+
+function makeHalf(array, n){
+    let half = 0;
+    if(array.length >= 2) half = Math.floor(array.length / 2);
+    else return array[0];
+    const firstHalf = array.slice(0, half);
+    const secondHalf = array.slice(half);
+
+    let firstArr_last = firstHalf[firstHalf.length - 1]; //앞쪽 arr의 가장 마지막 숫자
+    let lastArr_first = secondHalf[0];
+    
+    let diff1 = Math.abs(firstArr_last - n);
+    let diff2 = Math.abs(lastArr_first - n)
+    
+    if(diff1 < diff2){
+        if(diff1 < diff){
+            diff1 = diff;
+            makeHalf(firstHalf, n);
+        } 
+        else return firstArr_last
+    }else{
+         if(diff2 < diff){
+            diff2 = diff;
+            makeHalf(secondHalf, n);
+        } 
+        else return lastArr_first;
+    }
+        
+}
+*/
