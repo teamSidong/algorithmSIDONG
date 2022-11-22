@@ -1,0 +1,14 @@
+function solution(arr)
+{
+    var answer = [];
+    for(let i=0;i<arr.length; i++){
+        
+        while(arr[i]==arr[i+1]){
+            arr.splice(i,1)
+        }
+        console.log(arr);
+        answer= arr;
+    }
+    //while은 해당될때 까지 해야됨
+    return answer;
+}
