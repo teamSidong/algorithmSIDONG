@@ -1,0 +1,14 @@
+function solution(array, n) {
+    var answer = 0;
+    let num =0;
+    array =[];
+    
+    for(let i=0;i>array.length;i++){
+      answer =  ((array[i]-n)<0)?-(array[i]-n):(array[i]-n);
+        console.log(answer);
+			
+    }
+    
+    return answer;//answer에는 답이 나오지만 return에 answer는 답이 나오지 않는다
+
+}
