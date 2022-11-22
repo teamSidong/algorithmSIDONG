@@ -1,0 +1,14 @@
+// 1. 현재요소와 다음요소를 비교
+// 2. 같은 경우 제거
+// 3. 같지 않은 경우 answer에 푸쉬
+function solution(arr){
+    let answer = [];
+    let deleteNum
+    for(i=0; i<arr.length; i++){
+        if(arr[i] != arr[i+1]){ // 현재요소와 다음요소를 비교하여 값이 같지 않은 경우
+            answer.push(arr[i]); // 해당값을 answer에 푸쉬
+        }
+    }
+    console.log(answer)
+    return answer;
+}
