@@ -1,0 +1,6 @@
+function solution(n, t) {
+    var answer = 0;
+    answer = n*Math.pow(2,t)//두배가 늘어나는 것 
+    
+    return answer;
+}
