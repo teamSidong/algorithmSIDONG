@@ -1,0 +1,12 @@
+function solution(numbers) {
+    let arr = [];
+        
+    arr = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+    //index가 숫자value랑 같이 나열
+
+   for(let i = 0; i < arr.length; i++){
+		numbers = numbers.split(arr[i]).join(i)
+    }
+    
+    return numbers
+}
