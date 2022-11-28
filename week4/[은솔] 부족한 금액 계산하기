@@ -1,0 +1,12 @@
+function solution(price, money, count) {
+    let answer = 0; 
+    let pay = 0; // 놀이기구 이용금액 
+    
+    for(i=1; i<=count; i++){ // 0부터 돌 경우 i=0 -> pay=0
+         pay += i*price;
+    }
+    if(money<pay){ // 놀이기구 이용금액이 현재 가지고 있던 금액보다 큰 경우 
+        answer = pay - money; // 차액을 answer로 반환
+    }
+    return answer;
+}
