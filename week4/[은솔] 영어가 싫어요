@@ -1,0 +1,11 @@
+function solution(numbers) {
+    let answer = 0; 
+    let englishArr =
+    ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']; // numbers에서 숫자로 변환가능한 영어문자들을 배열로 지정
+    
+    for(i=0; i<englishArr.length; i++){ // 길이만큼 반복
+        numbers = numbers.replace(englishArr[i], i) //numbers에 englishArr의 요소가 있는 경우 해당 요소를 인덱스 값으로 변경
+    }   
+    answer = Number(numbers); // numbers는 현재 문자열이므로 정수로 변환
+    return answer;
+}
