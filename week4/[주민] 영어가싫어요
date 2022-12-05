@@ -1,0 +1,14 @@
+//문제: https://school.programmers.co.kr/learn/courses/30/lessons/120894#
+
+function solution(numbers) {
+    var answer = 0;
+    var numStrings = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+    
+     for(let i=0; i<numStrings.length; i++){
+        let regexAll = new RegExp(numStrings[i], 'g'); // 정규표현식 - 모든 패턴을 찾음
+         numbers = numbers.replace(regexAll, i);
+     }
+    
+    
+    return parseInt(numbers);
+}
