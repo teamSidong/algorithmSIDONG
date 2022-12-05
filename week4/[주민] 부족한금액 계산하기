@@ -1,0 +1,17 @@
+//문제 : https://school.programmers.co.kr/learn/courses/30/lessons/82612
+
+function solution(price, money, count) {
+    var answer = -1;
+
+    //1차시도
+    //let totalPrice = 2*(price+(price*count));
+    //answer = totalPrice - money;
+    
+    //2차시도
+    let totalPrice = 0;
+    for(let i=1; i<count+1; i++){
+        totalPrice = totalPrice+(price*i);
+    }
+    
+    return Math.abs(totalPrice - money);
+}
