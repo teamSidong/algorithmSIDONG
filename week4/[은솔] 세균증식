@@ -1,0 +1,7 @@
+function solution(n, t) {
+    let answer = n; 
+    for(i=0; i<t; i++){
+        answer = answer * 2; // answer은 t가 1씩 증가할 수록 2배 만큼 증가
+    }
+    return answer;
+}
