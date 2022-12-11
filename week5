@@ -1,0 +1,12 @@
+function solution(cipher, code) {
+    let answer = '';
+    let answerList = [];
+    for(i=1; i<=cipher.length; i++){ cipher의 길이만큼 i반복
+        const index = code * i 
+        if(index <= cipher.length){ // cipher의 길이보다 작거나 같은경우
+            answerList.push(cipher [index-1]);   // 해당 인덱스 값을 정답으로 반환
+        }
+    }
+    answer = answerList.join("")
+    return answer;
+}
