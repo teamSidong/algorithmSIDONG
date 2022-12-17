@@ -8,16 +8,27 @@ WEEK1 :
   3. 가운데글자 가져오기
   
 WEEK2 :
-
-lv0 : 369게임(https://school.programmers.co.kr/learn/courses/30/lessons/120891?language=javascript)
-
-lv0 : A로 B 만들기 (https://school.programmers.co.kr/learn/courses/30/lessons/120886)
-
-lv1 : 제일 작은 수 제거하기 (https://school.programmers.co.kr/learn/courses/30/lessons/12935)
+1. 369게임
+2. A로 B 만들기
+3. 제일 작은 수 제거하기
 
 WEEK3 :
-lv0 : 피자나눠먹기(1) (https://school.programmers.co.kr/learn/courses/30/lessons/120814)
+1. 피자나눠먹기
+2. 가까운 수
+3. 같은 숫자는 싫어
 
-lv0 : 피자나눠먹기(1) (https://school.programmers.co.kr/learn/courses/30/lessons/120814)
+WEEK4 :
+1. 세균증식
+2. 영어가 싫어요
+3. 부족한 금액 계산하기
 
-lv0 : 피자나눠먹기(1) (https://school.programmers.co.kr/learn/courses/30/lessons/120814)
+WEEK5 :
+1. 제곱수 판별하기
+2. 암호해독
+3. 없는 숫자 더하기
+4. 아이스아메리카노
+5. 나이출력
+6. 핸드폰 가리기
+
+WEEK6 :
+
