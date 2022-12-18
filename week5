@@ -1,0 +1,6 @@
+function solution(age) {
+    let answer = 0;
+    answer = 2022 - (age-1); // age는 기본 1, age+1; year-1;
+    console.log(answer);
+    return answer;
+}
