@@ -1,0 +1,8 @@
+function solution(phone_number) {
+    let answer = '';
+    for(i=0; i<phone_number.length-4; i++){ // 문자열의 길이에서 4를 뺀만큼 반복
+        phone_number = phone_number.replace(phone_number[i], "*"); // 해당 인덱스를 *로 변경하여 반환
+    }
+    answer = phone_number;
+    return answer;
+}
