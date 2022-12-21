@@ -1,6 +1,8 @@
 # algorithmSIDONG
 알고리즘 스터디 동호회 시동
 
+주민 노션: https://rift-wormhole-d04.notion.site/e9d7ad6d30304da9a629c4412473ba21
+
 ## 은솔 지민 주민
 WEEK1 :
   1. 약수구하기
