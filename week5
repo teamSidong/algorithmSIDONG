@@ -1,4 +1,16 @@
 
+function solution(cipher, code) {
+    let answer = '';
+    let answerList = [];
+    for(i=1; i<=cipher.length; i++){ cipher의 길이만큼 i반복
+        const index = code * i 
+        if(index <= cipher.length){ // cipher의 길이보다 작거나 같은경우
+            answerList.push(cipher [index-1]);   // 해당 인덱스 값을 정답으로 반환
+        }
+    }
+    answer = answerList.join("")
+=======
+
 function solution(n) {
      let answer = 2;
         const number = Math.sqrt(n); // n의 제곱근을 number로 지정
@@ -21,5 +33,6 @@ function solution(money) {
     let answer2 = money - (5500*answer1); // 위에서 구한 금액에서 5500을 나눈값과 금액의 차
     answer = [answer1, answer2]
     
+
     return answer;
 }
