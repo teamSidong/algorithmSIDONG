@@ -1,3 +1,4 @@
+
 function solution(cipher, code) {
     let answer = '';
     let answerList = [];
@@ -8,5 +9,30 @@ function solution(cipher, code) {
         }
     }
     answer = answerList.join("")
+=======
+
+function solution(n) {
+     let answer = 2;
+        const number = Math.sqrt(n); // n의 제곱근을 number로 지정
+        if(parseInt(number)*parseInt(number)==n && number>0){
+					// 제곱근 number는 자연수가 되어야하며
+					// n을 정수로 형변환 한 값의 곱은 n이 되어야한다. 
+            answer = 1;
+        }
+        console.log(number, n)
+=======
+
+function solution(age) {
+    let answer = 0;
+    answer = 2022 - (age-1); // age는 기본 1, age+1; year-1;
+    console.log(answer);
+=======
+function solution(money) {
+    let answer = [];
+    let answer1 = parseInt(money / 5500); // 금액 나누기 5500 + 정수형변환
+    let answer2 = money - (5500*answer1); // 위에서 구한 금액에서 5500을 나눈값과 금액의 차
+    answer = [answer1, answer2]
+    
+
     return answer;
 }
