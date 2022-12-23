@@ -1,4 +1,19 @@
 
+function solution(numbers) {
+    let answer = -1;
+    let answerList = [];
+    let numberList = [0,1,2,3,4,5,6,7,8,9];
+    numberList.forEach( v => { //forEach문을 이용해 각 요소 추출
+      if(!numbers.includes(v)){
+          answerList.push((Number(v))); // 정수 형변환하여 리스트에 push
+      }  
+    })
+    answer = answerList[0]; // 첫번째 요소를 정답으로 지정
+    for(i=1; i<answerList.length; i++){ //리스트의 길이만큼 반복       
+        answer += answerList[i]   // 정답에 다음요소를 더해줌     
+    }
+=======
+
 function solution(phone_number) {
     let answer = '';
     for(i=0; i<phone_number.length-4; i++){ // 문자열의 길이에서 4를 뺀만큼 반복
@@ -40,6 +55,7 @@ function solution(money) {
     let answer1 = parseInt(money / 5500); // 금액 나누기 5500 + 정수형변환
     let answer2 = money - (5500*answer1); // 위에서 구한 금액에서 5500을 나눈값과 금액의 차
     answer = [answer1, answer2]
+
 
     return answer;
 }
