@@ -27,12 +27,12 @@ WEEK4 :
 3. 부족한 금액 계산하기
 
 WEEK5 :
-1. 제곱수 판별하기
-2. 암호해독
-3. 없는 숫자 더하기
-4. 아이스아메리카노
-5. 나이출력
-6. 핸드폰 가리기
+1. 제곱수 판별하기 :  https://school.programmers.co.kr/learn/courses/30/lessons/120909
+2. 암호해독       : https://school.programmers.co.kr/learn/courses/30/lessons/120892
+3. 없는 숫자 더하기: https://school.programmers.co.kr/learn/courses/30/lessons/86051
+4. 아이스아메리카노: https://school.programmers.co.kr/learn/courses/30/lessons/120909
+5. 나이출력:    https://school.programmers.co.kr/learn/courses/30/lessons/120892
+6. 핸드폰 가리기: https://school.programmers.co.kr/learn/courses/30/lessons/86051
 
 WEEK6 :
 1. 머쓱이보다 키 큰 사람
