@@ -35,9 +35,9 @@ WEEK5 :
 6. 핸드폰 가리기: https://school.programmers.co.kr/learn/courses/30/lessons/86051
 
 WEEK6 :
-1. 머쓱이보다 키 큰 사람
-2. 점의 위치 구하기
-3. 음양더하기
+1. 머쓱이보다 키 큰 사람 : https://school.programmers.co.kr/learn/courses/30/lessons/120585
+2. 점의 위치 구하기  : https://school.programmers.co.kr/learn/courses/30/lessons/120841
+3. 음양더하기  :  https://school.programmers.co.kr/learn/courses/30/lessons/76501
 
 WEEK7:
 1. OX퀴즈: https://school.programmers.co.kr/learn/courses/30/lessons/120907
