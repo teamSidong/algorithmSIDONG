@@ -4,6 +4,8 @@
 은솔 노션: https://www.notion.so/df175d9ca2a04c0e93bbe2799619c86a
 <br>
 주민 노션: https://rift-wormhole-d04.notion.site/e9d7ad6d30304da9a629c4412473ba21
+<br>
+지민 노션 : https://horse-llama-ddc.notion.site/9b1b0846434345c3a6514363c40220d6
 
 ## 은솔 지민 주민
 WEEK1 :
