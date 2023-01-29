@@ -1,0 +1,44 @@
+// 문제1: 최댓값 만들기
+function solution(numbers) {
+    let answer = 0;
+    answer = Math.max(...numbers); // Math 함수를 이용하여 numbers배열의 최댓값 저장
+    const index = numbers.indexOf(answer); // 방금 찾은 최대값의 index를 찾아 저장
+    numbers.splice(index, 1); // 해당 값을 배열에서 제거
+    return answer*(Math.max(...numbers)); 
+		// 최댓값을 제거한 배열에서 최대값을 찾아 answer와의 곱을 반환
+}
+
+// 문제2: 평행
+function solution(dots) {
+    let answer = 0
+    let mList = []; // 기울기를 담는 리스트
+    for(let i=0; i<dots.length-1; i++){
+        const x1 = dots[i][0]; // 현재 요소의 첫번째 점 (x좌표)
+        const x2 = dots[i+1][0]; // 다음 요소의 첫번째 점 (x좌표)
+        const y1 = dots[i][1]; // 현재 요소의 두번째 점(y좌표)
+        const y2 = dots[i+1][1]; // 다음 요소의 두번째 점 (y좌표)
+        const m = (x1-x2) / (y1-y2); // 기울기
+        const absM = Math.abs(m) // 기울기의 절댓값
+        if(mList.includes(absM)){ // 절댓값 존재하면 1
+          answer = 1;
+        }else{ // 아니면 기울기리스트에 push
+          mList.push(absM)
+        }
+    }
+    return answer;
+}
+
+// 문제3: 과일장수
+function solution(k, m, score) {
+    let answer = 0; // 최대이익
+    let appleBox = []; // score배열에서 m만큼 잘라 넣기 위해 생성된 새로운 배열
+    score.sort(function(a,b) { // score를 오름차순으로 정리
+        return a-b
+    });
+    for(let i=score.length; score.length>=m; i--){ // 0이 될 때까지 반복
+            appleBox = score.splice(score.length-m, m); // score배열에서 m만큼 잘라담음
+            const boxMin = Math.min(...appleBox); // 새로움 배열에서 최솟값을 찾는다.
+            answer += boxMin * m // anwer에 최솟값*상자의개수를 저장
+    } 
+    return answer
+}
