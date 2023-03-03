@@ -1,0 +1,65 @@
+///ox퀴즈
+function solution(quiz) {
+    var answer = [];
+   quiz.forEach((item) => {
+        const oneQuiz = item.split(" ");
+        
+        const X = Number(oneQuiz[0]);
+        const Y = Number(oneQuiz[2]);
+        
+        let calc = 0;
+        
+        if(oneQuiz[1] === "+"){
+            calc = X + Y;
+        }
+        
+        if(oneQuiz[1] === "-"){
+            calc = X - Y;
+        }
+        
+        const result = Number(oneQuiz[4]);
+        
+        if(calc === result){
+            answer.push("O");
+        }
+        
+        if(calc !== result){
+            answer.push("X");
+        }
+    })
+    return answer
+}
+//eval함수 
+
+//배열의 유사도
+function solution(s1, s2) {
+    var answer = 0;
+    for(let i of s1){//for of루프 배열에 대한 반복
+        for(let j of s2){
+            if(i==j){
+                answer++
+            }
+        }
+    }
+    return answer;
+}
+
+//3.약수의 개수와 덧셈
+function solution(left, right) {
+    var answer = 0;
+    
+    //left ~ right
+    for(let i=left; i<=right; i++){
+        let cnt = 0;
+        //1 ~ i
+        for(let j=1; j<=i; j++){
+            if(i%j === 0){
+                cnt += 1;
+            }
+        }
+        //cnt 개수에 따라 덧셈 뺄셈
+       answer = cnt%2 === 0 ? answer += i : answer -= i;
+    }
+    
+    return answer;
+}
