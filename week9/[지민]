@@ -1,0 +1,31 @@
+///1. 최대값 만들기
+function solution(numbers) {
+    var answer = 0;
+    numbers.sort(function(a, b) {
+  return b - a;
+    });//배열을 역순으로 만든후 최대값을 만들 수 있는 수를 0번째 1번째에 둔다
+    answer = numbers[0]*numbers[1]
+    return answer;
+}
+
+//2. 평행
+function solution(numbers) {
+    var answer = 0;
+    numbers.sort(function(a, b) {
+  return b - a;
+    });//배열을 역순으로 만든후 최대값을 만들 수 있는 수를 0번째 1번째에 둔다
+    answer = numbers[0]*numbers[1]
+    return answer;
+}
+
+//3. 과일장수
+function solution(k, m, score) {
+    let answer = 0;
+    score.sort((a, b) => b - a);
+
+    for(let i = m-1; i < score.length; i += m){
+        answer += score[i] * m;//배열에서 가장 작은값에서 갯수 곱하기
+    }
+    console.log(score)
+    return answer;
+}
