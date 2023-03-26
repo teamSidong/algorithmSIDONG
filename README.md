@@ -54,3 +54,9 @@ WEEK8:
 1. 최댓값 만들기 https://school.programmers.co.kr/learn/courses/30/lessons/120847
 2. 평행 https://school.programmers.co.kr/learn/courses/30/lessons/120875
 3. 과일장수 https://school.programmers.co.kr/learn/courses/30/lessons/135808
+
+WEEK9:
+
+평균구하기  [https://school.programmers.co.kr/learn/courses/30/lessons/12944
+치킨쿠폰 [https://school.programmers.co.kr/learn/courses/30/lessons/120884
+안전지대 https://school.programmers.co.kr/learn/courses/30/lessons/120866
