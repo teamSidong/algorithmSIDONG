@@ -29,34 +29,34 @@ WEEK4 :
 3. 부족한 금액 계산하기
 
 WEEK5 :
-1. 제곱수 판별하기 :  https://school.programmers.co.kr/learn/courses/30/lessons/120909
-2. 암호해독       : https://school.programmers.co.kr/learn/courses/30/lessons/120892
-3. 없는 숫자 더하기: https://school.programmers.co.kr/learn/courses/30/lessons/86051
-4. 아이스아메리카노: https://school.programmers.co.kr/learn/courses/30/lessons/120909
-5. 나이출력:    https://school.programmers.co.kr/learn/courses/30/lessons/120892
-6. 핸드폰 가리기: https://school.programmers.co.kr/learn/courses/30/lessons/86051
+1. 제곱수 판별하기
+2. 암호해독
+3. 없는 숫자 더하기
+4. 아이스아메리카노
+5. 나이출력
+6. 핸드폰 가리기
 
 WEEK6 :
-1. 머쓱이보다 키 큰 사람 : https://school.programmers.co.kr/learn/courses/30/lessons/120585
-2. 점의 위치 구하기  : https://school.programmers.co.kr/learn/courses/30/lessons/120841
-3. 음양더하기  :  https://school.programmers.co.kr/learn/courses/30/lessons/76501
+1. 머쓱이보다 키 큰 사람
+2. 점의 위치 구하기
+3. 음양더하기
 
 WEEK7:
-1. OX퀴즈: https://school.programmers.co.kr/learn/courses/30/lessons/120907
-2. 배열의 유사도: https://school.programmers.co.kr/learn/courses/30/lessons/120903
-3. 약수의 개수와 덧셈: https://school.programmers.co.kr/learn/courses/30/lessons/77884
+1. OX퀴즈
+2. 배열의 유사도
+3. 약수의 개수와 덧셈
 
 <br>
 🎊2023년🎊
 <br>
 
 WEEK8:
-1. 최댓값 만들기 https://school.programmers.co.kr/learn/courses/30/lessons/120847
-2. 평행 https://school.programmers.co.kr/learn/courses/30/lessons/120875
-3. 과일장수 https://school.programmers.co.kr/learn/courses/30/lessons/135808
+1. 최댓값 만들기
+2. 평행 
+3. 과일장수
 
 WEEK9:
 
-1. 평균구하기  https://school.programmers.co.kr/learn/courses/30/lessons/12944
-2. 치킨쿠폰 https://school.programmers.co.kr/learn/courses/30/lessons/120884
-3. 안전지대 https://school.programmers.co.kr/learn/courses/30/lessons/120866
+1. 평균구하기  
+2. 치킨쿠폰
+3. 안전지대
