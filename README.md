@@ -1,7 +1,7 @@
 # algorithmSIDONG
 알고리즘 스터디 동호회 시동
 
-은솔 노션: https://www.notion.so/df175d9ca2a04c0e93bbe2799619c86a
+은솔 노션: https://standing-griffin-21d.notion.site/df175d9ca2a04c0e93bbe2799619c86a
 <br>
 주민 노션: https://rift-wormhole-d04.notion.site/e9d7ad6d30304da9a629c4412473ba21
 <br>
