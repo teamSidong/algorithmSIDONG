@@ -1,0 +1,53 @@
+노션 : https://www.notion.so/week12-3af488d8170b4f98896bfd208aa61ef4
+
+
+1. 문자열 겹쳐쓰기
+
+function solution(my_string, overwrite_string, s) {
+    var answer = '';
+
+    answer = my_string.substring(0, s) + overwrite_string + my_string.substring(s + overwrite_string.length);
+    
+    return answer;
+}
+
+
+2. 폰켓몬
+
+function solution(nums) {
+
+		var answer = 0;
+    var temp = nums[0];
+    var notDup = 1;
+    var len = nums.length;
+    
+    for(let i=0; i<len; i++){
+        if(temp !== nums[i]){
+            temp = nums[i];
+            notDup++;
+        }
+    }
+    
+    if(notDup < len/2){
+        answer = notDup
+    }else{
+        answer = len/2;
+    }
+    
+    return answer;
+    
+    
+}
+
+
+
+
+3. 순서쌍의 개수
+
+function solution(n) {
+    let cnt = 0;
+    for(let i = 1; i*i<n; i++){
+        if(n % i == 0) cnt++;
+    }
+    return Number.isInteger(Math.sqrt(n)) ? cnt * 2 + 1 : cnt * 2;
+}
