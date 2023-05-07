@@ -1,0 +1,37 @@
+1. 문자열 겹쳐쓰기<br>
+function solution(my_string, overwrite_string, s) {
+    let answer = [...my_string];
+    console.log(answer)
+    let overwrite = overwrite_string.length;
+    
+    answer.splice(s, overwrite, overwrite_string)
+    console.log(answer)
+    
+    return answer.join("");
+}
+
+2. 폰켓몬<br>
+function solution(nums) {
+    var answer = 0;
+    console.log(nums, nums.length)
+    let number = [...new Set(nums)]
+    console.log(number)
+    if((nums.length/2)<number.length){
+        answer = number.length-1
+    }else if(number.length === 1){
+        answer =1
+    }else{
+        answer = number.length
+    }
+    return answer;
+}
+
+3. 순서쌍의 갯수<br>
+function solution(n){
+	let cnt = 0;
+	for(let i=0; i*i<n; i++){
+		if(n% i ==0) cnt++;
+	}
+	return Number.isInteger(Math.sqrt(n)) ? cnt ? *2 +1 : cnt * 2;
+//isInteger() - 전달된 값이 정수인지
+//Math.sqrt(n) - 제곱근 구하기 
