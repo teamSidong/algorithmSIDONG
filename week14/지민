@@ -1,0 +1,72 @@
+//1.코드처리하기.
+//[https://school.programmers.co.kr/learn/courses/30/lessons/181932](https://school.programmers.co.kr/learn/courses/30/lessons/181932)
+function solution(code) {
+    var answer = '';
+    let mode = true;
+    console.log(code)
+    for(let i=0; i<code.length; i++){
+       if(code[i] == '1')
+           mode =!mode;
+        switch(mode){
+            case true:
+                if(i%2 == 0){
+                    if(code[i] !='1')
+                        answer += code[i]
+                }
+                break;
+            case false:
+                if(i%2 !==0){
+                   if(code[i] !='1')
+                        answer += code[i]
+                }
+                break;
+        }
+    }
+    console.log(mode)
+    return answer;
+}
+
+//2.리스트 자르기
+function solution(n, slicer, num_list) {
+    var answer = [];
+    switch (n){
+        case 1:
+        answer = num_list.splice(slicer[1]);
+            break;
+        case 2:
+        answer = num_list.splice(slicer[0]);
+              break;
+        case 3:
+        answer = num_list.splice(slicer[0], slicer[1])
+              break;
+        case 4:
+            answer = num_list.filter(number => number %  === 0)
+            console.log(answer)
+            answer.splice(slicer[0], slicer[1])
+              break;
+    }
+    console.log(answer)
+    return answer;
+}
+3.모의고사
+function solution(n, slicer, num_list) {
+    var answer = [];
+    switch (n){
+        case 1:
+        answer = num_list.splice(slicer[1]);
+            break;
+        case 2:
+        answer = num_list.splice(slicer[0]);
+              break;
+        case 3:
+        answer = num_list.splice(slicer[0], slicer[1])
+              break;
+        case 4:
+            answer = num_list.filter(number => number %  === 0)
+            console.log(answer)
+            answer.splice(slicer[0], slicer[1])
+              break;
+    }
+    console.log(answer)
+    return answer;
+}
