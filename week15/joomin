@@ -15,3 +15,41 @@ function solution(x, n) {
     return answer;
 }
 
+
+/* 2의 영역 */
+https://school.programmers.co.kr/learn/courses/30/lessons/181894#
+function solution(arr) {
+    var answer = [];
+    
+    let firstInx = arr.indexOf(2);
+    let lastInx = arr.lastIndexOf(2);
+    
+    console.log("firstInx:"+firstInx);
+    console.log("lastInx:"+lastInx);
+    
+    if(firstInx === -1){
+        answer[0] = -1;
+    }else{
+        answer = arr.slice(firstInx, lastInx+1);
+    }
+    
+    return answer;
+}
+
+/* 문자 개수세기 */
+https://school.programmers.co.kr/learn/courses/30/lessons/181902
+function solution(my_string) {
+    var answer = [];
+    var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+                    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    
+    for(let i=0; i<alphabet.length; i++){
+        let word = alphabet[i];
+        answer[i] = 0;
+        for(let j=0; j<my_string.length; j++){
+            answer[i] = my_string[j] == word ?  answer[i]+1 : answer[i];
+        }
+    }
+    
+    return answer;
+}
