@@ -1,0 +1,51 @@
+1.  x만큼 간격이 있는 n개의 숫자
+[https://school.programmers.co.kr/learn/courses/30/lessons/12954](https://school.programmers.co.kr/learn/courses/30/lessons/12954)<br>
+function solution(x, n) {
+    var answer = [];
+    for(let i=1;i<=n;i++){
+      let number = x*i
+        console.log(number)
+        answer.push(number)
+    }
+    return answer;
+}
+2. 2의 영역https://school.programmers.co.kr/learn/courses/30/lessons/181894
+function solution(arr) {
+    var answer = [];
+    
+    let index = arr.indexOf(2);
+    let lastIndex = arr.lastIndexOf(2);
+    console.log(index, lastIndex)
+    if(index >-1){
+        answer = arr.slice(index, lastIndex+1);
+        return answer
+    }else{
+        return [index]
+    }
+    
+}
+3.문자수 세기 https://school.programmers.co.kr/learn/courses/30/lessons/181902
+function solution(my_string) {
+    var answer = [];
+    const arr = Array(52).fill(0)
+    return [...my_string].reduce((acc, cur) => {
+        let index 
+        const findAlpha = cur.charCodeAt()//
+        if(findAlpha >=97){
+            index = findAlpha -71
+        }else {
+            index = findAlpha-65
+        }
+        acc[index] = acc[index] ?? 0
+        acc[index]++
+        console.log(index, acc[index])
+        return acc
+    }, arr)
+}
+
+string.charCodeAt(index)//index에 해당하는 문자의 코드를 리턴
+
+Array.reduce(accumulator, currentNumber){
+	return accmulator + curretnNumber
+  
+  
