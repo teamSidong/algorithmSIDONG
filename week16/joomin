@@ -1,0 +1,71 @@
+
+가까운 1 찾기
+https://school.programmers.co.kr/learn/courses/30/lessons/181898
+
+function solution(arr, idx) {
+    var answer = -1;
+    
+    for(idx; idx<arr.length; idx++){
+        if(arr[idx]>0){
+            answer = idx;
+            break;
+        }
+    }
+    
+    return answer;
+}
+
+
+=================================================
+
+문자열 묶기
+function solution(strArr) {
+    var answer = 0;
+    var map = new Map(); // {length : count};
+    var count = 0;
+    
+    for(let i=0; i<strArr.length; i++){
+        var str = strArr[i];
+        count = map.get(str.length+"");
+        
+        if(count === NaN || count === undefined){
+            map.set(str.length+"", 1)
+        }else{
+            map.set(str.length+"", count+1) 
+        }
+        
+    }
+    
+    console.log([...map.entrise()].reduce((a,b) => a[1] > b[1] ? a:b)[0]);
+    
+    return answer;
+}
+
+
+=====================================================
+
+명예의 전당(1)
+function solution(k, score) {
+    var answer = [];
+    var temp = 0;
+    var max = score[0];
+    
+    for(let i=0;i<score.length;i++){
+        let sc = score[i];
+        if(sc > max){
+            max = sc;
+        }else {
+            temp = sc;
+        }
+        
+        if(i<k){
+            answer[i] = score[0];
+        }else{
+            answer[i] = temp;
+        }
+        
+
+    }
+    
+    return answer;
+}
