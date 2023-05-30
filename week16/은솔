@@ -1,0 +1,45 @@
+1. 가까운 1찾기
+function solution(arr, idx) {
+    for(let i=idx; i<arr.length; i++){
+        if(arr[i] === 1) {
+            return i
+        }
+    }
+    return -1;
+}
+
+2. 명예의전당
+function solution(k, score) {
+    const answer = [];
+    const kList = [];
+    for(let i=0; i<score.length; i++){
+        const orderList = kList.sort((a,b)=>a-b)
+        if (i <= k || score[i] > orderList[0]  || score[i] < orderList[k]) { 
+            kList.push(score[i])
+        } 
+        if (i >= k && orderList.length !== k) {
+            kList.splice(0,1)
+        }
+        answer.push(kList.sort((a,b)=>a-b)[0])
+    }
+    return answer;
+}
+
+3. 문자열묶기
+function solution(strArr) {
+    const lengthList = [];   
+    strArr.forEach( str => {
+        lengthList.push(str.length);
+    })
+    const object = {}  
+    for (let i in lengthList) {
+        if (lengthList[i] in object) {
+            object[lengthList[i]] += 1
+        } else {
+            object[lengthList[i]] = 1
+        }
+    }
+    const sortList = Object.keys(object).sort((a,b) => object[b] - object[a])
+    console.log(sortList)
+    return sortList.slice(0, 1).map(x => parseInt(x))
+}
