@@ -1,0 +1,38 @@
+1. 가까운 1찾기[https://school.programmers.co.kr/learn/courses/30/lessons/181898](https://school.programmers.co.kr/learn/courses/30/lessons/181898)
+
+```jsx
+function solution(arr, idx) {
+    for(let i = idx ; i < arr.length; i++) {
+        const num = arr[i]
+        if(num === 1) return i
+    }
+    return -1
+}
+```
+
+1. 명예의 전당(1)[https://school.programmers.co.kr/learn/courses/30/lessons/138477](https://school.programmers.co.kr/learn/courses/30/lessons/138477)
+
+```jsx
+
+```
+
+1. 문자열 묶기[https://school.programmers.co.kr/learn/courses/30/lessons/181855](https://school.programmers.co.kr/learn/courses/30/lessons/181855)
+
+```jsx
+function solution(strArr) {
+    var answer = [];
+    let arr =[]
+    for(let i=0; i<strArr.length; i++){
+      arr.push(strArr[i].length)
+    }
+    const result = {};
+    arr.forEach((x) => {
+        result[x] =  (result[x] || 0)+1
+    })
+    console.log(result)
+    const values = Object.values(result);
+    const num = values.filter((value, index, arr) => arr.indexOf(value) !== index);
+    console.log(num)
+    return Math.max(...num)
+}
+```
