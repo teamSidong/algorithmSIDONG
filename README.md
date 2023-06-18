@@ -7,6 +7,8 @@
 <br>
 지민 노션 : https://horse-llama-ddc.notion.site/9b1b0846434345c3a6514363c40220d6
 
+[github.md](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 ## 은솔 지민 주민
 WEEK1 :
   1. 약수구하기
